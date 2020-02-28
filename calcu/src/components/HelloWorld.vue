@@ -20,6 +20,7 @@
     <div @click="append('0')" class= "btn zero">0</div>
     <div @click="dot" class= "btn">.</div>
     <div @click="equal" class= "btn operator">=</div>
+    
   </div>
 </template>
 
@@ -80,6 +81,7 @@ export default {
             this.current = `${this.operator(parseFloat(this.current),parseFloat(this.previous))}`;
             this.previous = null;
         },
+       
     }
 }
 </script>
